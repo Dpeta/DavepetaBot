@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
+"""
+Silly DavepetaBot!!!
+
+Doesn't do anything that actually has anything to do with Davepeta :3
+"""
 import os
 import random
 
 import discord
 
 import commands
+# User info and their reacts are stored in reacts, which isn't on the repository for privacy :3
+# 'reacts' is a dict with user IDs (int) as keys and lists of strings with reacts as values.
+# 'user_1' is just a silly user ID string.
 from reacts import reacts, user_1
 
 activity = discord.Activity(name="dp!help", details="dp!help", type=discord.ActivityType.playing)
