@@ -5,7 +5,7 @@ Silly DavepetaBot!!!
 
 Doesn't do anything that actually has anything to do with Davepeta :3
 """
-import os
+import getpass
 import random
 
 import discord
@@ -113,5 +113,5 @@ dpeta = Davepeta(intents=intents,
                  allowed_mentions=discord.AllowedMentions.none(),
                  member_cache_flags=discord.MemberCacheFlags.none(),
                  max_messages=None)
-dpeta.run(os.environ["DAVEPETA_TOKEN"])
+dpeta.run(getpass.getpass(prompt="Token: "))
     
